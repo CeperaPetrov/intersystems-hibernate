@@ -17,9 +17,9 @@ import org.hibernate.AssertionFailure;
 public class InterSystemsIRISJoinFragment extends ANSIJoinFragment {
 
 	public void addJoin(String rhsTableName, String rhsAlias, String[] lhsColumns, String[] rhsColumns, JoinType joinType, String on) {
-		if ( joinType == JoinType.FULL_JOIN ) {
+		/*if ( joinType == JoinType.FULL_JOIN ) {
 			throw new AssertionFailure( "InterSystems IRIS does not support full outer joins" );
-		}
+		}*/
 		super.addJoin( rhsTableName, rhsAlias, lhsColumns, rhsColumns, joinType, on );
 	}
 
